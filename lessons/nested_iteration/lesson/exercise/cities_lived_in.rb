@@ -6,26 +6,64 @@ cities_lived_in = {
 }
 
 
-# Problem #1: 
-# Get a unique list of all of the cities that these humans have lived in  
+# Problem #1:
+# Get a unique list of all of the cities that these humans have lived in
 # ["Philadelphia", "Fort Collins", "Seattle", "Denver", "Santa Fe", "Portland", "Lansing", "Columbus", "Austin"]
 
+    places_lived = []
+
+# going into the _cities_lived_in hash
+# iterate over the [key, value]
+# iterate through values
+# if/else conditional
+
+    cities_lived_in.each do |key, value|
+        value.each do |element|
+            unless places_lived.include?(element)
+                places_lived << element
+            end
+        end
+    end
+    p places_lived.sort
+
+    # cities_lived_in.each do |name, cities|
+    #     cities.each do |city|
+    #         unless places_lived.include?(city)
+    #             places_lived << city
+    #         end
+    #     end
+    # end
 
 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# Problem #2: 
-# Write code that iterates through the `cities_lived_in` hash, and returns a list of  
+
+# Problem #2:
+# Write code that iterates through the `cities_lived_in` hash, and returns a list of
 # names of the humans who've lived in Philadelphia.
 
 # [:michaela, :mike, :alex]
 # or
 # ["Michaela", "Mike", "Alex"]
 
+    phily_residents = []
+
+# return an array of keys
+# access cities_lived_in hash
+#
+
+cities_lived_in.each do |name, cities|
+  cities.each do |city|
+    x
+  end
+end
 
 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# Problem #3: 
-# Create a hash that has the city as a key, and the number of people that live in it as it's value: 
+
+# Problem #3:
+# Create a hash that has the city as a key, and the number of people that live in it as it's value:
 
 # {
 #     "Philadelphia" => 3,
@@ -38,3 +76,15 @@ cities_lived_in = {
 #     "Columbus => 1,
 #     "Austin" => 1
 # }
+
+  population_count = Hash.new(0)
+
+# psuedocode here
+
+  cities_lived_in.each do |name, cities|
+    cities.each do |city|
+      population_count[city] += 1
+    end
+  end
+
+  puts population_count
