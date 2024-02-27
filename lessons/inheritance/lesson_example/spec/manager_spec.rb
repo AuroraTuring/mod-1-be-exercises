@@ -36,6 +36,7 @@ RSpec.describe Manager do
       expect(manager.name).to eq("Becca")
       expect(manager.id).to eq("DEF123")
       expect(manager.base_salary).to eq(12)
+      expect(manager.bonus).to eq(0)
       expect(manager.total_compensation).to eq(12)
     end
   end
