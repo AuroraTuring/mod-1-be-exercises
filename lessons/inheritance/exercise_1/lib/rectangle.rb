@@ -1,12 +1,14 @@
-class Rectangle
+require "./lib/shape"
 
-  # this class should have the following properties:
-  # - color
-  # - length
-  # - width
+class Rectangle < Shape
+  # attr_reader :color, :length, :width
 
-  #It should have the following methods:
-  # - area (width * length)
-  # - perimeter (2 * (length + width))
+  # def initialize(color, length, width)
+  #   super
+  # end
+
+  def rectangle_specific_behavior
+    x
+  end
 
 end

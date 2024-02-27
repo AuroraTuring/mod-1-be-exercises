@@ -2,7 +2,7 @@ require "./lib/rectangle"
 
 #Unskip the tests one-by-one, then edit the Rectangle class so that each test passes.
 RSpec.describe Rectangle do
-  xit "exists" do
+  it "exists" do
     r = Rectangle.new("blue", 5, 10)
   end
 
