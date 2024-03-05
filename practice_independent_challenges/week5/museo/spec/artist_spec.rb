@@ -1,3 +1,6 @@
+require './lib/photograph'
+require './lib/artist'
+
 RSpec.describe Artist do
 
   before(:each) do
@@ -23,8 +26,8 @@ RSpec.describe Artist do
     expect(@artist.country).to eq("United States")
   end
 
-  # it "has an age at death" do
-  #   expect(@artist.age_at_death).to eq(82)
-  # end
+  it "has an age at death" do
+    expect(@artist.age_at_death).to eq(82)
+  end
 
 end
