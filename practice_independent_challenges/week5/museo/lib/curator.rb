@@ -28,7 +28,7 @@ class Curator
   #   x
   # end
 
-  # def country_specific_photos
+  # def country_specific_photos(country)
     # x
   # end
 
