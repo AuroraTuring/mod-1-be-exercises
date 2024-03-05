@@ -65,5 +65,22 @@ RSpec.describe Curator do
     expect(@curator.find_artist_by_id("1")).to eq(@artist_1)
   end
 
+  it "can return a list of all artists and their photographs" do
+    @curator.add_photograph(@photo_1)
+    @curator.add_photograph(@photo_2)
+    @curator.add_artist(@artist_1)
+    @curator.add_artist(@artist_2)
+
+
+  end
+
+  # it "can return a list of names of artists who have more than one photograph" do
+  #   x
+  # end
+
+  # it "can return a list of Photographs that were taken by a photographer from that country" do
+  #   x
+  # end
+
 
 end
