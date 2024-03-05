@@ -20,4 +20,16 @@ class Curator
     end
   end
 
+  def all_artists_and_photos
+    x
+  end
+
+  # def multi_photo_artists
+  #   x
+  # end
+
+  # def country_specific_photos
+    # x
+  # end
+
 end
