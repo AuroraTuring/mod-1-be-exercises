@@ -21,7 +21,18 @@ class Curator
   end
 
   def all_artists_and_photos
-    x
+    result = Hash.new
+    @artists.each do |artist|
+      result[artist] ||= []
+    end
+    # @photographs.each do |photo|
+    #   result[@artists.find_by(photo.artist_id)] << photo
+    # end
+    @photographs.each do |photo|
+      artist = @artists.find { |artist| artist.id == |photo| photo.id }
+      result[artist] << photo
+    end
+    result
   end
 
   # def multi_photo_artists
